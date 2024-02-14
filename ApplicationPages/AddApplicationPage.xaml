@@ -1,0 +1,46 @@
+﻿<Page x:Class="LastPractical.ApplicationPages.AddApplicationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:LastPractical.ApplicationPages"
+      mc:Ignorable="d"
+      Title="Добавление заявки" Height="900" Width="1600">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="70"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Column="1" Grid.Row="0" Content="Выберите клиента"/>
+        <ComboBox x:Name="UserClietnComboBox"  Grid.Column="2"
+                  ItemsSource="{Binding Pa}"
+                  >
+            
+        </ComboBox>
+        
+        <Label Grid.Column="1" Grid.Row="1" Content="Выберите исполнителя"/>
+        <ComboBox Grid.Column="2" Grid.Row="1" x:Name="UserExecutorComboBox" />
+        
+        <Label Grid.Column="1" Grid.Row="2" Content="Выберите статут заявки"/>
+        <ComboBox Grid.Column="2" Grid.Row="2" x:Name="StatusApplicationComboBox" />
+        
+        <Label Grid.Column="1" Grid.Row="3" Content="Заполните описание"/>
+        <TextBox Grid.Column="2" Grid.Row="3" x:Name="DescriptionTextBox"/>
+        
+        <Label Grid.Column="1" Grid.Row="4" Content="Выберите дату"/>
+        <DatePicker Grid.Column="2" Grid.Row="4" Name="datePicker1" IsDropDownOpen="False" SelectedDateFormat="Short" SelectedDateChanged="DatePicker1_OnSelectedDateChanged" />
+        
+        <Button Grid.Column="1" Grid.Row="5" x:Name="AddApplicationButton" Content="fsfsdf" Click="AddApplicationButton_OnClick"/>
+    </Grid>
+</Page>

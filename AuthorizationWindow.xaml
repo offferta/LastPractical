@@ -1,0 +1,44 @@
+﻿<Window x:Class="LastPractical.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LastPractical"
+        mc:Ignorable="d"
+        Title="Окно авторизации" Height="900" Width="1000" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Авторизация" FontSize="24" HorizontalAlignment="Center"/>
+            
+            <Label Grid.Row="1" Content="Введите логин" FontSize="20" VerticalContentAlignment="Bottom"/>
+            <TextBox x:Name="LoginTextBox" Grid.Row="2" FontSize="20" Text="ulyana04051966" VerticalContentAlignment="Center" MaxLength="20"/>
+            <Label Grid.Row="3" Content="Введите пароль"  FontSize="20" VerticalContentAlignment="Bottom"/>
+            <PasswordBox x:Name="PasswordTextBox" Grid.Row="4" FontSize="20" Password="5c56adc71" VerticalContentAlignment="Center" MaxLength="20"/>
+            
+            <Button x:Name="AuthorizationButton" Grid.Row="6" Margin="5" Content="Авторизоваться" Click="AuthorizationButton_OnClick"/>
+            <Button x:Name="RegistrationButton" Grid.Row="7" Margin="5" Content="Зарегистрироваться" Click="RegistrationButton_OnClick"/>
+        </Grid>
+    </Grid>
+</Window>
