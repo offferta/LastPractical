@@ -8,7 +8,7 @@
         Title="Обновление заказа" Height="900" Width="1600" WindowState="Maximized" Loaded="UpdateApplicationWindow_OnLoaded">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>

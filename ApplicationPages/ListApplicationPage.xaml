@@ -23,7 +23,7 @@
                 <DataGridTextColumn Header="Исполнитель" Binding="{Binding Path=UserExecutor.FullName}"/>
                 <DataGridTextColumn Header="Статус" Binding="{Binding Path=Status.Name}"/>
                 <DataGridTextColumn Header="Описание" Binding="{Binding Path=Description}"/>
-                <DataGridTextColumn Header="Дата оформления заявки" Binding="{Binding Path=DateApplication}"/>
+                <DataGridTextColumn Header="Дата оформления заявки" Binding="{Binding Path=DateApplication, StringFormat=dd.MM.yyyy}"/>
                 <DataGridTextColumn Header="Часы работы" Binding="{Binding Path=WorkTime}"/>
                 <DataGridTemplateColumn Header="Редактировать">
                     <DataGridTemplateColumn.CellTemplate>

@@ -13,18 +13,18 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="70"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
             <ColumnDefinition Width="70"/>
         </Grid.ColumnDefinitions>
         
         <Border Grid.Row="0" BorderThickness="0,0,0,1" Grid.ColumnSpan="7" BorderBrush="Black" />
-        <Frame Grid.Row="1" x:Name="ApplicationFrame" Grid.ColumnSpan="7" NavigationUIVisibility="Hidden" Background="#FFFFFF" />
-        <Button x:Name="ApplicationButton" Grid.Column="1" Margin="30" Content="Добавить заявку" FontSize="32" Click="ApplicationButton_OnClick"/>
-        <Button x:Name="ListApplicationButton" Grid.Column="2" Margin="30" Content="Список заявок" FontSize="32" Click="ListApplicationButton_OnClick"/>
-        
+        <Frame Grid.Row="1" x:Name="ApplicationFrame" Grid.ColumnSpan="7" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Background="#FFFFFF" />
+        <Button x:Name="ApplicationButton" Grid.Column="1" Width="250"   Content="Добавить заявку"  Click="ApplicationButton_OnClick"/>
+        <Button x:Name="ListApplicationButton" Grid.Column="2" Width="250"   Content="Список заявок"  Click="ListApplicationButton_OnClick"/>
+        <Label Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="FullName" MouseDoubleClick="FullName_OnMouseEnter"/>
     </Grid>
 </Window>

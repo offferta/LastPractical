@@ -24,23 +24,24 @@
         
         <Label Grid.Column="1" Grid.Row="0" Content="Выберите клиента"/>
         <ComboBox x:Name="UserClietnComboBox"  Grid.Column="2"
+                  Width="350"
                   ItemsSource="{Binding Pa}"
                   >
             
         </ComboBox>
         
         <Label Grid.Column="1" Grid.Row="1" Content="Выберите исполнителя"/>
-        <ComboBox Grid.Column="2" Grid.Row="1" x:Name="UserExecutorComboBox" />
+        <ComboBox Grid.Column="2" Grid.Row="1" x:Name="UserExecutorComboBox" Width="350" />
         
         <Label Grid.Column="1" Grid.Row="2" Content="Выберите статут заявки"/>
-        <ComboBox Grid.Column="2" Grid.Row="2" x:Name="StatusApplicationComboBox" />
+        <ComboBox Grid.Column="2" Grid.Row="2" Width="350" x:Name="StatusApplicationComboBox" />
         
         <Label Grid.Column="1" Grid.Row="3" Content="Заполните описание"/>
-        <TextBox Grid.Column="2" Grid.Row="3" x:Name="DescriptionTextBox"/>
+        <TextBox Grid.Column="2" Grid.Row="3" Width="350" x:Name="DescriptionTextBox"/>
         
         <Label Grid.Column="1" Grid.Row="4" Content="Выберите дату"/>
-        <DatePicker Grid.Column="2" Grid.Row="4" Name="datePicker1" IsDropDownOpen="False" SelectedDateFormat="Short" SelectedDateChanged="DatePicker1_OnSelectedDateChanged" />
+        <DatePicker Grid.Column="2" Grid.Row="4" Width="350" Height="40" Name="datePicker1" IsDropDownOpen="False" SelectedDateFormat="Short" SelectedDateChanged="DatePicker1_OnSelectedDateChanged" />
         
-        <Button Grid.Column="1" Grid.Row="5" x:Name="AddApplicationButton" Content="fsfsdf" Click="AddApplicationButton_OnClick"/>
+        <Button Grid.Column="2" Grid.Row="5" Width="350" x:Name="AddApplicationButton" Content="Добавить заявку" Click="AddApplicationButton_OnClick"/>
     </Grid>
 </Page>

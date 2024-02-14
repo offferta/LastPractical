@@ -68,3 +68,4 @@ C:\Temp\study\labs\LastPractical\LastPractical\obj\Debug\net7.0-windows\Applicat
 C:\Temp\study\labs\LastPractical\LastPractical\obj\Debug\net7.0-windows\ApplicationPages\ListApplicationPage.baml
 C:\Temp\study\labs\LastPractical\LastPractical\obj\Debug\net7.0-windows\ApplicationPages\UpdateApplicationWindow.g.cs
 C:\Temp\study\labs\LastPractical\LastPractical\obj\Debug\net7.0-windows\ApplicationPages\UpdateApplicationWindow.baml
+C:\Temp\study\labs\LastPractical\LastPractical\obj\Debug\net7.0-windows\App.baml

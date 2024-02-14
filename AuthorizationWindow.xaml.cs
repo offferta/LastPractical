@@ -75,14 +75,9 @@ namespace LastPractical
             }
         }
 
-        private void AuthorizationButton_OnClick(object sender, RoutedEventArgs e)
+        private void AuthorizatiorButton_OnClick(object sender, RoutedEventArgs e)
         {
             GetUser();
-        }
-
-        private void RegistrationButton_OnClick(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

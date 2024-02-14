@@ -5,40 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LastPractical"
         mc:Ignorable="d"
-        Title="Окно авторизации" Height="900" Width="1000" WindowState="Maximized">
+        Title="Окно авторизации"  MinHeight="600" MinWidth="1600" WindowState="Maximized">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="200"/>
-            <RowDefinition/>
-            <RowDefinition Height="200"/>
+            <RowDefinition Height="50" /> <!-- Верхний отступ -->
+            <RowDefinition />
+            <RowDefinition Height="50" /> <!-- Отступ между элементами -->
         </Grid.RowDefinitions>
         
-        <Grid Grid.Row="1" Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="20"/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Label Grid.Row="0" Content="Авторизация" FontSize="24" HorizontalAlignment="Center"/>
-            
-            <Label Grid.Row="1" Content="Введите логин" FontSize="20" VerticalContentAlignment="Bottom"/>
-            <TextBox x:Name="LoginTextBox" Grid.Row="2" FontSize="20" Text="ulyana04051966" VerticalContentAlignment="Center" MaxLength="20"/>
-            <Label Grid.Row="3" Content="Введите пароль"  FontSize="20" VerticalContentAlignment="Bottom"/>
-            <PasswordBox x:Name="PasswordTextBox" Grid.Row="4" FontSize="20" Password="5c56adc71" VerticalContentAlignment="Center" MaxLength="20"/>
-            
-            <Button x:Name="AuthorizationButton" Grid.Row="6" Margin="5" Content="Авторизоваться" Click="AuthorizationButton_OnClick"/>
-            <Button x:Name="RegistrationButton" Grid.Row="7" Margin="5" Content="Зарегистрироваться" Click="RegistrationButton_OnClick"/>
-        </Grid>
+        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource CustomBorderStyle}" Height="600">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" /> <!-- Верхний отступ -->
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" /> <!-- Отступ между элементами -->
+                    <RowDefinition />
+                    <RowDefinition Height="90" /> <!-- Отступ между элементами -->
+                    <RowDefinition  Height="20"/>
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.ColumnSpan="3" Text="Авторизация" HorizontalAlignment="Center"
+                           FontFamily="Montserrat" FontSize="36" />
+                <Label Content="Введите логин" Grid.Row="1" Grid.Column="1" FontFamily="Montserrat" Margin="30,30,0,0" />
+                <TextBox x:Name="LoginTextBox" Text="ulyana04051966" Grid.Row="2" Grid.Column="1" 
+                         Style="{StaticResource TextBoxStyle}"
+                         Width="500"
+                         FontSize="30"
+                         Margin="0"
+                         Height="70"
+                         HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+                <!-- Пароль -->
+                <Label Content="Введите пароль" Grid.Row="3" Grid.Column="1" Margin="30,30,0,0" />
+                <PasswordBox x:Name="PasswordTextBox" Password="5c56adc71" Grid.Row="4" Grid.Column="1"
+                             Style="{StaticResource PasswordBoxStyle}"
+                             Width="500"
+                             FontSize="30"
+                             Margin="0"
+                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                <!-- Кнопка Войти -->
+                <Button x:Name="AuthorizatiorButton" Content="Войти" Width="360" Grid.Row="6" Grid.Column="1"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                        Click="AuthorizatiorButton_OnClick" />
+
+            </Grid>
+        </Border>
     </Grid>
 </Window>
